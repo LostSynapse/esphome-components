@@ -2,6 +2,11 @@
 
 A collection of ESPHome components for various hardware integrations and monitoring solutions.
 
+## Fork Changes
+
+fix(protocol_factory): remove ESP_LOG calls from static constructor context
+Fixes crash on ESP32-P4 with USB Host + Ethernet concurrent initialization.
+
 ## Available Components
 
 ### 🔋 UPS HID Component (`ups_hid`)
