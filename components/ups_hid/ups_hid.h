@@ -70,7 +70,7 @@ namespace esphome
       void setup() override;
       void update() override;
       void dump_config() override;
-      float get_setup_priority() const override { return setup_priority::DATA; }
+      float get_setup_priority() const override { return setup_priority::AFTER_CONNECTION; }
 
       // Configuration setters with validation
       void set_simulation_mode(bool simulation_mode) { simulation_mode_ = simulation_mode; }
